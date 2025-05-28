@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veterinaria Pet Lovers</title>
+  <meta name="description" content="Veterinaria Pet Lovers - Atención médica y amorosa para tus mascotas.">
+  <meta name="keywords" content="veterinaria, Pet Lovers, salud animal, mascotas, cuidado veterinario">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1 class="titulo">Pet Lovers - Tu veterinaria de confianza</h1>
+    <h2 class="subtitulo">Atención médica y amorosa para tus mascotas</h2>
+    <a href="#citas" class="btn-principal">Agendar Cita</a>
+
+    <!-- Imagen centrada después del botón -->
+    <img src="foto1.jpg" alt="Foto de veterinaria" style="display:block; margin:20px auto; width:80%; max-width:300px;">
+
+
+    <!--Boton Hamburguesa-->
+    <div class="hamburguer" onclick="toogleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+
+  <nav id="menu">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#citas">Citas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Imagen destacada y presentación -->
+  <section id="inicio">
+    <img src="imagenes/doctora.jpg" class="imagen-principal">
+    <h2 class="seccion-titulo">Comprometidos con su bienestar</h2>
+    <p class="descripcion">En Pet Lovers, nuestra misión es brindar atención médica veterinaria profesional y llena de amor para todas tus mascotas.</p>
+  </section>
+
+  <!-- Botones destacados -->
+  <section class="botones-secundarios">
+    <a href="#servicios" class="btn-secundario">Conoce nuestros servicios</a>
+    <a href="#contacto" class="btn-secundario">Contáctanos</a>
+  </section>
+
+  <script>
+    function toogleMenu(){
+      const menu = document.getElementById('menu');
+      if(menu.style.display === 'block'){
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'block';
+      }
+    }
+	  
+  </script>
+  
+</body>
+</html>
